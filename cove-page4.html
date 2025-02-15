@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0073e6;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 30px;
+            margin-right: 10px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        .menu {
+            position: relative;
+            display: inline-block;
+        }
+        .menu-btn {
+            background: none;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #333;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .menu:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+        }
+        .marquee {
+            width: 100%;
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background: #eef5ff;
+        }
+        .hero-text {
+            max-width: 50%;
+            text-align: left;
+        }
+        .hero-text h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #0073e6;
+        }
+        .hero-text p {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .hero-image {
+            width: 40%;
+        }
+        .hero-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .presented-by {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0073e6;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="ecommerce-icon.png" alt="E-Commerce Icon">
+            E-Commerce
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="menu">
+            <button class="menu-btn">☰ Menu</button>
+            <div class="dropdown-content">
+                <a href="#">Introduction to E-Commerce</a>
+                <a href="#">Types of E-Commerce</a>
+                <a href="#">E-Commerce in Nepal</a>
+                <a href="#">HTML & CSS Implementation</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="marquee">
+        <marquee>"E-Commerce: Revolutionizing the Future of Business!"</marquee>
+    </div>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to the Future of Online Shopping</h1>
+            <p>Explore how E-Commerce is transforming businesses worldwide with cutting-edge technology.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+        <div class="hero-image">
+            <img src="ecommerce-background.jpg" alt="E-Commerce Illustration">
+        </div>
+    </section>
+    
+    <div class="presented-by">Presented by Class 11 'A' Curious Team</div>
+    
+    <footer>
+        <a href="#" class="btn">Next</a>
+    </footer>
+</body>
+</html>
